@@ -1,0 +1,62 @@
+[
+  {
+    "name": "John Doe",
+    "age": 16,
+    "grade": "A",
+    "gender": "Male"
+  },
+  {
+    "name": "Jane Smith",
+    "age": 17,
+    "grade": "B",
+    "gender": "Female"
+  },
+  {
+    "name": "Mike Brown",
+    "age": 16,
+    "grade": "A",
+    "gender": "Male"
+  },
+  {
+    "name": "Lucy Gray",
+    "age": 15,
+    "grade": "C",
+    "gender": "Female"
+  },
+  {
+    "name": "Emma White",
+    "age": 17,
+    "grade": "A",
+    "gender": "Female"
+  },
+  {
+    "name": "Liam Green",
+    "age": 16,
+    "grade": "B",
+    "gender": "Male"
+  },
+  {
+    "name": "Sophia Black",
+    "age": 15,
+    "grade": "B",
+    "gender": "Female"
+  },
+  {
+    "name": "Noah Blue",
+    "age": 17,
+    "grade": "C",
+    "gender": "Male"
+  },
+  {
+    "name": "Olivia Purple",
+    "age": 15,
+    "grade": "A",
+    "gender": "Female"
+  },
+  {
+    "name": "Ava Red",
+    "age": 16,
+    "grade": "B",
+    "gender": "Female"
+  }
+]
