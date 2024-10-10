@@ -1,0 +1,43 @@
+--> Load Dataset
+--> Check data types
+-- 5 - point summary (df.describe()) ----> 1.min                count_of_notnull            mode
+                                           2.Q1                 mean                        freq of mode
+                                           3.Q2 - median        std                         no.of sub-categories
+                                           4.Q4
+                                           5.max
+                                        
+--univariate analysis                                            
+
+CT -------------> mean, median, mode
+MD -------------> range, std, var, % variation
+P.V  -----------> median, quartile, deciles
+O.L  -----------> IQR, 
+
+
+
+Roburst ---> xi - xmedian
+             _____________
+                  IQR
+
+
+MinMaxScalar --->   xi - xmin
+                  _____________
+                   (xmax-xmin)
+                   
+                   
+StandardScaler ---->    (xi-xbar)
+                 _______________________
+                 standard Deviation of x
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                           
+log      ------ +ve -->strictly
+box-cox  ------ +ve -->strictly
+
+log lp (0 - +ve)
+yeo - Johnson(-ve - 0 - +ve)

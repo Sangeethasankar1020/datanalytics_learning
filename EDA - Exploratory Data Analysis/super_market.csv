@@ -1,0 +1,75 @@
+Invoice ID,Branch,City,Customer type,Gender,Product line,Unit price,Quantity,Tax 5%,Total,Date,Time,Payment,cogs,gross margin percentage,gross income,Rating
+1,A,New York,Member,Male,Fruits,2.00,10,1.00,21.00,2023-01-01,10:00,Credit Card,20.00,5.00,1.00,85
+2,B,Los Angeles,Non-member,Female,Dairy,1.50,5,0.38,8.88,2023-01-01,11:00,Debit Card,7.50,10.00,1.38,75
+3,C,Chicago,Member,Female,Bakery,3.00,2,0.30,6.60,2023-01-02,12:00,Cash,6.00,10.00,0.60,90
+4,A,New York,Non-member,Male,Grains,1.00,8,0.40,8.40,2023-01-02,14:00,Credit Card,8.00,5.00,0.40,80
+5,B,Los Angeles,Member,Female,Meat,5.00,3,0.75,15.75,2023-01-03,15:00,Cash,15.00,5.00,0.75,95
+6,C,Chicago,Non-member,Male,Fruits,2.50,6,0.75,15.75,2023-01-03,16:00,Debit Card,15.00,5.00,0.75,70
+7,A,New York,Member,Female,Vegetables,2.00,4,0.40,8.80,2023-01-04,17:00,Credit Card,8.00,5.00,0.40,60
+8,B,Los Angeles,Non-member,Male,Dairy,1.75,10,0.88,19.38,2023-01-04,18:00,Cash,17.50,5.00,1.88,80
+9,C,Chicago,Member,Female,Bakery,3.50,2,0.35,7.70,2023-01-05,09:00,Credit Card,7.00,5.00,0.70,95
+10,A,New York,Non-member,Male,Grains,1.20,9,0.54,11.49,2023-01-05,10:00,Debit Card,10.80,10.00,0.69,78
+11,A,New York,Member,Female,Meat,6.00,4,1.20,25.20,2023-01-06,11:00,Cash,24.00,5.00,1.20,88
+12,B,Los Angeles,Non-member,Male,Fruits,2.20,7,0.77,17.33,2023-01-06,12:00,Credit Card,15.40,5.00,1.93,82
+13,C,Chicago,Member,Female,Dairy,1.80,3,0.27,5.67,2023-01-07,13:00,Debit Card,5.40,10.00,0.27,90
+14,A,New York,Non-member,Male,Bakery,3.20,5,0.80,17.00,2023-01-07,14:00,Cash,16.00,5.00,1.00,70
+15,B,Los Angeles,Member,Female,Grains,1.50,8,0.60,12.60,2023-01-08,15:00,Credit Card,12.00,5.00,0.60,80
+16,C,Chicago,Non-member,Male,Meat,5.50,2,0.55,11.55,2023-01-08,16:00,Debit Card,11.00,5.00,0.55,75
+17,A,New York,Member,Female,Fruits,2.30,9,1.03,22.58,2023-01-09,17:00,Cash,20.70,5.00,1.88,90
+18,B,Los Angeles,Non-member,Male,Dairy,1.90,4,0.38,8.38,2023-01-09,18:00,Credit Card,7.60,10.00,0.78,85
+19,C,Chicago,Member,Female,Bakery,3.40,2,0.34,7.34,2023-01-10,09:00,Debit Card,6.80,5.00,0.54,88
+20,A,New York,Non-member,Male,Grains,1.00,6,0.30,6.30,2023-01-10,10:00,Cash,6.00,5.00,0.30,80
+21,A,New York,Member,Female,Meat,6.00,3,0.90,19.50,2023-01-11,11:00,Credit Card,18.00,5.00,1.50,95
+22,B,Los Angeles,Non-member,Male,Fruits,2.40,8,0.96,20.96,2023-01-11,12:00,Debit Card,19.20,5.00,1.76,70
+23,C,Chicago,Member,Female,Dairy,1.75,5,0.44,9.69,2023-01-12,13:00,Cash,8.75,5.00,0.94,80
+24,A,New York,Non-member,Male,Bakery,3.50,4,0.70,15.40,2023-01-12,14:00,Credit Card,14.00,5.00,1.40,90
+25,B,Los Angeles,Member,Female,Grains,1.10,9,0.50,10.90,2023-01-13,15:00,Debit Card,9.90,5.00,1.00,75
+26,C,Chicago,Non-member,Male,Meat,5.00,3,0.75,16.25,2023-01-13,16:00,Cash,15.00,5.00,1.25,88
+27,A,New York,Member,Female,Fruits,2.20,6,0.66,14.76,2023-01-14,17:00,Credit Card,13.20,5.00,1.56,92
+28,B,Los Angeles,Non-member,Male,Dairy,1.80,7,0.63,13.98,2023-01-14,18:00,Debit Card,12.60,5.00,1.38,80
+29,C,Chicago,Member,Female,Bakery,3.00,5,0.75,15.75,2023-01-15,09:00,Cash,15.00,5.00,0.75,85
+30,A,New York,Non-member,Male,Grains,1.00,10,0.50,10.50,2023-01-15,10:00,Credit Card,10.00,5.00,0.50,78
+31,A,New York,Member,Female,Meat,6.50,2,0.65,13.65,2023-01-16,11:00,Debit Card,13.00,5.00,0.65,90
+32,B,Los Angeles,Non-member,Male,Fruits,2.50,4,0.50,10.50,2023-01-16,12:00,Cash,10.00,5.00,0.50,85
+33,C,Chicago,Member,Female,Dairy,1.60,5,0.40,8.80,2023-01-17,13:00,Credit Card,8.00,5.00,0.80,75
+34,A,New York,Non-member,Male,Bakery,3.20,3,0.48,10.08,2023-01-17,14:00,Debit Card,9.60,5.00,0.48,90
+35,B,Los Angeles,Member,Female,Grains,1.00,8,0.40,8.40,2023-01-18,15:00,Cash,8.00,5.00,0.40,82
+36,C,Chicago,Non-member,Male,Meat,5.00,4,1.00,21.00,2023-01-18,16:00,Credit Card,20.00,5.00,1.00,95
+37,A,New York,Member,Female,Fruits,2.30,6,0.69,15.30,2023-01-19,17:00,Debit Card,13.80,5.00,1.50,88
+38,B,Los Angeles,Non-member,Male,Dairy,1.90,7,0.67,14.13,2023-01-19,18:00,Cash,13.30,5.00,0.83,80
+39,C,Chicago,Member,Female,Bakery,3.00,5,0.75,15.75,2023-01-20,09:00,Credit Card,15.00,5.00,0.75,85
+40,A,New York,Non-member,Male,Grains,1.20,9,0.54,11.49,2023-01-20,10:00,Debit Card,10.80,10.00,0.69,78
+41,A,New York,Member,Female,Meat,6.00,4,1.20,25.20,2023-01-21,11:00,Cash,24.00,5.00,1.20,90
+42,B,Los Angeles,Non-member,Male,Fruits,2.20,7,0.77,17.33,2023-01-21,12:00,Credit Card,15.40,5.00,1.93,82
+43,C,Chicago,Member,Female,Dairy,1.80,3,0.27,5.67,2023-01-22,13:00,Debit Card,5.40,10.00,0.27,90
+44,A,New York,Non-member,Male,Bakery,3.20,5,0.80,17.00,2023-01-22,14:00,Cash,16.00,5.00,1.00,70
+45,B,Los Angeles,Member,Female,Grains,1.50,8,0.60,12.60,2023-01-23,15:00,Credit Card,12.00,5.00,0.60,80
+46,C,Chicago,Non-member,Male,Meat,5.50,2,0.55,11.55,2023-01-23,16:00,Debit Card,11.00,5.00,0.55,75
+47,A,New York,Member,Female,Fruits,2.30,9,1.03,22.58,2023-01-24,17:00,Cash,20.70,5.00,1.88,90
+48,B,Los Angeles,Non-member,Male,Dairy,1.90,4,0.38,8.38,2023-01-24,18:00,Credit Card,7.60,10.00,0.78,85
+49,C,Chicago,Member,Female,Bakery,3.40,2,0.34,7.34,2023-01-25,09:00,Debit Card,6.80,5.00,0.54,88
+50,A,New York,Non-member,Male,Grains,1.00,6,0.30,6.30,2023-01-25,10:00,Cash,6.00,5.00,0.30,80
+51,A,New York,Member,Female,Meat,6.00,3,0.90,19.50,2023-01-26,11:00,Credit Card,18.00,5.00,1.50,95
+52,B,Los Angeles,Non-member,Male,Fruits,2.40,8,0.96,20.96,2023-01-26,12:00,Debit Card,19.20,5.00,1.76,70
+53,C,Chicago,Member,Female,Dairy,1.75,5,0.44,9.69,2023-01-27,13:00,Cash,8.75,5.00,0.94,80
+54,A,New York,Non-member,Male,Bakery,3.50,4,0.70,15.40,2023-01-27,14:00,Credit Card,14.00,5.00,1.40,90
+55,B,Los Angeles,Member,Female,Grains,1.10,9,0.50,10.90,2023-01-28,15:00,Debit Card,9.90,5.00,1.00,75
+56,C,Chicago,Non-member,Male,Meat,5.00,3,0.75,16.25,2023-01-28,16:00,Cash,15.00,5.00,1.25,88
+57,A,New York,Member,Female,Fruits,2.20,6,0.66,14.76,2023-01-29,17:00,Credit Card,13.20,5.00,1.56,92
+58,B,Los Angeles,Non-member,Male,Dairy,1.80,7,0.63,13.98,2023-01-29,18:00,Debit Card,12.60,5.00,1.38,80
+59,C,Chicago,Member,Female,Bakery,3.00,5,0.75,15.75,2023-01-30,09:00,Cash,15.00,5.00,0.75,85
+60,A,New York,Non-member,Male,Grains,1.20,9,0.54,11.49,2023-01-30,10:00,Credit Card,10.80,10.00,0.69,78
+61,A,New York,Member,Female,Meat,6.00,4,1.20,25.20,2023-01-31,11:00,Debit Card,24.00,5.00,1.20,90
+62,B,Los Angeles,Non-member,Male,Fruits,2.20,7,0.77,17.33,2023-01-31,12:00,Cash,15.40,5.00,1.93,82
+63,C,Chicago,Member,Female,Dairy,1.80,3,0.27,5.67,2023-02-01,13:00,Credit Card,5.40,10.00,0.27,90
+64,A,New York,Non-member,Male,Bakery,3.20,5,0.80,17.00,2023-02-01,14:00,Debit Card,16.00,5.00,1.00,70
+65,B,Los Angeles,Member,Female,Grains,1.50,8,0.60,12.60,2023-02-02,15:00,Cash,12.00,5.00,0.60,80
+66,C,Chicago,Non-member,Male,Meat,5.50,2,0.55,11.55,2023-02-02,16:00,Credit Card,11.00,5.00,0.55,75
+67,A,New York,Member,Female,Fruits,2.30,9,1.03,22.58,2023-02-03,17:00,Debit Card,20.70,5.00,1.88,90
+68,B,Los Angeles,Non-member,Male,Dairy,1.90,4,0.38,8.38,2023-02-03,18:00,Cash,7.60,10.00,0.78,85
+69,C,Chicago,Member,Female,Bakery,3.40,2,0.34,7.34,2023-02-04,09:00,Credit Card,6.80,5.00,0.54,88
+70,A,New York,Non-member,Male,Grains,1.00,6,0.30,6.30,2023-02-04,10:00,Debit Card,6.00,5.00,0.30,80
+71,A,New York,Member,Female,Meat,6.00,3,0.90,19.50,2023-02-05,11:00,Cash,18.00,5.00,1.50,95
+72,B,Los Angeles,Non-member,Male,Fruits,2.40,8,0.96,20.96,2023-02-05,12:00,Credit Card,19.20,5.00,1.76,70
+73,C,Chicago,Member,Female,Dairy,1.75,5,0.44,9.69,2023-02-06,13:00,Debit Card,8.75,5.00,0.94,80
+74,A,New York,Non-member,Male,Bakery,3.50,4,0.70,15.40,2023-

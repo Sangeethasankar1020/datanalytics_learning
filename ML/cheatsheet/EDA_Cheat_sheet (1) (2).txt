@@ -1,0 +1,231 @@
+-LOAD
+-CHECK DATA TYPES(.dtypes(),.info())
+	<.info(): will also give a direct count of number of numeric and categorical variables>
+	<variables/attributes are columns, records are rows>
+-5 point summary: 
+	numeric: 
+		.describe()
+		<min, max values>
+		<50 percentile/median>
+		<25,75>
+	categorical: 
+		.describe(include=object)
+		<number of categories present in the variable>
+		<the top category with highest freq>
+		<freq of the top category>
+-uni-variate analysis:
+	numeric:
+		-skewness .skew() 
+			-<0 left skewed
+			-=0 normally distributed/symetric distribution
+			->0 right skewed
+		-kurtosis .kurt()
+`			-<0 platykurtic
+			-=0 mesokurtic
+			->0 leptokurtic
+		-outliers:
+			z-score:
+				from sklearn.preprocessing import StandardScaler
+				ss=StandardScaler()
+				tab_name['col_zscore']=ss.fit_transform(tab_name['col_name'])
+				*(what ever is <-3 and >+3 are outliers.)
+			
+			IQR:
+				q1=data.quantile(0.25)
+				q3=data.quantile(0.75)	
+				iqr=q3-q1
+				ul=q3+1.5*IQR
+				ll=q1-1.5*IQR
+				*(whatever is <ll and >ul are outliers.)
+		-visualization:
+			*KDE-plot
+			*HISTOGRAM
+			*BOX-plot
+	Categories:
+		-find proportions of each category
+			*.value_counts()
+		-visualization:
+			* count_plot()
+			* value_counts().plot(kind='pie',autopct='%.2f%%')
+-Bi-Variate analysis:(Capstone group along with these visulaization perform Statistical tests.)
+	cat vs cat:
+		-tabulation
+			*crosstab(tab_name['col1'],tab_name['col2'])
+		-visualization
+			*countplot(data=tab,x=cat1,hue=cat2)#grouped bar plot
+			*crosstab.plot(kind='bar',stacked=True)
+	num vs cat:
+		-visualizatuion:
+			*histograms with cat as hue(sns.displot())
+			*violin plot as one of the axis as cat and other axis as num.
+			*box plot as one of the axis as cat and other axis as num.
+			*kde with cat as hue(sns.displot())
+			*stripplot one of the axis as cat and other axis as num.
+			*swarmplot one of the axis as cat and other axis as num.
+	num vs num:
+		-visualization:
+			(sns)
+			*scatterplot
+			*lineplot
+			*jointplot
+			*regressionplot
+			*heatmap
+-missing value treatment:
+		-identify missing values
+			-.isnull().sum()
+				# will tell you column wise count of missing values.
+			-.isnull().sum(axis=1)
+				# will tell you count of missing values in each record.
+		-Treatment:
+			-Drop:
+				-.dropna(axis=1,how='any'/'all',thresh=num,subset=[col])
+					how:
+						any->alteast 1 <or>
+						all->all values are null <and>
+					thresh:
+						its a count of minimum numer of not null values
+						that should be present in the axis to keep the 
+						record/col.
+					subset: will drop records on the basis of missing values
+						in the mentioned columns.
+				-axis1 will drop columns
+				-axis0 will drop rows
+
+			-Impute:
+				-mean/median for numeric
+                                     .fillna(tab[col].median/.mean)
+					
+				-mode for categorical
+				     .fillna(tab[col].mode()[0]
+
+				(drawbacks distribution changes)
+				-.ffill()#will impute next values
+				-.bfill()#will impute previous values
+				-.replace({np.nan:v})
+-outlier treatments:
+		-drop #least recommended
+			IQR:
+
+		 	data[~((data<LL)|(data>UL)).any(axis=1)]
+
+			z-score:
+
+		 	ssdata[~((ssdata<-3)|(ssdata>+3)).any(axis=1)]
+
+		-capping:
+			you will be replacing outliers with ul and ll.
+		-substracting and adding mean:
+			you will substract mean from positive outliers
+			you will add mean to negative outliers
+
+-Transformation:
+		-Transformation is used to make your data normal.
+		-log:
+			np.log(tab[col])
+		-box-cox:
+			from sklearn.preprocessing import PowerTransformer
+			pt=PowerTransformer(method='box-cox')
+			trans_col=pt.fit_transform(tab[[col]])
+
+			-it will be useful for positively skewed data
+			-if zero or negative values exist this wont work
+
+		-log1p:
+			np.log1p(tab[col])
+			
+			-this will work on data that has zero in it.
+			-will not work on negative values.
+		
+		-yeo-johnson:
+			from sklearn.preprocessing import PowerTransformer
+			pt=PowerTransformer(method='yeo-johnson')
+			trans_col=pt.fit_transform(tab[[col]])
+			
+			-this will work on negative positive and zero	
+		
+		-the default setting of powertransformer will apply standard scaler 
+		to transformed data(no need to scale after this)	
+
+-Scaling:	(the points below the code are just suggestions try everything for your projects
+		then select the method that gives best scores)
+		-is used to make the magnitude of all the numerical variables same
+		-Standard Scaler:(mean is zero std is 1 after scaling)
+			form sklearn.preprocessing import StandardScaler
+			ss=StandardScaler()
+			col_scaled=ss.fit_transfrom(col)
+			
+			-you will use the standard scaler when the data is normally distributed
+
+
+		-Robust Scaler:
+			form sklearn.preprocessing import RobustScaler
+			rs=RobustScaler()
+			col_scaled=rs.fit_transfrom(col)
+
+			-you will use robust scaler when data is having outliers.
+
+		-Min Max Scaler:(minimum value is zero maximum value is 1 after scaling)
+			form sklearn.preprocessing import MinMaxScaler
+			mm=MinMaxScaler()
+			col_scaled=mm.fit_transfrom(col)
+			
+			-you will use this when data is skewed
+
+Encoding:
+		-Changing the categorical data into numerical data.
+		-NOTE: Donot scale or transformed encoded variables
+	Types:
+		-Lable encoding
+		
+		from sklearn.preprocessing import LableEncoder
+		le=LableEncoder()
+		enc_col=le.fit_transform(cat-col)
+			-will work best when encoding target(the column that we are predicting)
+			-encodes on the basis of alphabetical order
+			-values will be integers
+			-works on single column at time.
+
+		-Ordinal encoding
+
+		from sklearn.preprocessing import OrdinalEncoder
+		oe=OrdinalEncoder(categories=[['']])
+		enc_col=oe.fit_transform(cat-col)
+			-will work best when encoding features(are the remaining columns that we are using to predict target)
+			-will encode on the basis of index of categories
+			-values will be float
+			-works on multiple columns at a time.
+
+		-Dummy encoding:
+		dummy_frame=pd.get_dummies(col,drop_first=True)
+		pd.concat([dummy_frame,original_table],axis=1)
+			-will work with target and features both
+			-will create new columns on the basis of categories present
+			-values are binary
+			-works on multiple columns at a time.
+	
+		-Freq encoding:
+		freq_enc_col=col.map(col.value_counts(normalize=True))
+			-will work on features
+			-will give number on the basis of frequency
+			-values are decimal
+			-works on single column at a time
+
+		-Target encoding:(mean enc)
+		target_enc_col=col.map(pd.groupby(cat_col)[Target].mean())
+			-will work features
+			-will give number on the basis of mean value of target
+			-values are decimal
+			-works on single column at a time
+
+Train-Test-Split:
+		from sklearn.model_selection import Train_Test_Split
+		xtrain,xtest,ytrain,ytest=train_test_split(X,y,random_state=1,train_size=0.7)
+		-This is used to split data into two subsets
+		-one subset is used to train the model
+		-the other subset is used to test performance of model on 
+		data that it has not seen
+		-you can give random state to get same samples in both subsets
+		-you can assign custom sizes using train_size/test_size.
+		
+			
+
