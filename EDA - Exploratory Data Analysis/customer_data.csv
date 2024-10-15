@@ -1,0 +1,6 @@
+Customer_ID,Age,Gender,Product_Category,Price,Purchase_Date,City,Payment_Method
+1,34,Male,Electronics,500,2024-10-01,New York,Credit Card
+2,29,Female,Clothing,120,2024-09-22,San Diego,Debit Card
+3,40,Female,Electronics,700,2024-08-15,New York,Credit Card
+4,23,Male,Books,25,2024-07-05,Chicago,PayPal
+5,35,Male,Furniture,350,2024-10-10,Seattle,Credit Card
