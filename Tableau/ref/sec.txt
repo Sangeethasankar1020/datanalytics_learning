@@ -1,0 +1,79 @@
+1)parameters 
+- sub category - filter we can filter top 10 
+
+- can modify when we filter 
+
+- we can create a parameter by enter a value -min and max and user can interact with the report 
+
+- we can change type of paramter by right click 
+
+
+-----------------------------
+2)sets
+
+- want to colour and highlights 
+
+- create a set - collection of few elements 
+
+- by top - select topN
+
+- put set in colour parts 
+
+-----------------------------------
+3) combine 
+
+- category , subcategory and sales in text - sort in descending 
+
+- combine - category and sub category create a combine field  - then create a visual and then add sort 
+
+- market - cat , sub create a combine field 
+
+----------------------------------------
+
+3)caption 
+- worksheet - show caption 
+-----------------------
+4) granularity 
+
+- put sales and profit in visual and category in colour 
+
+we can create a multiple by this
+
+----------------------------------
+5)managing metadata 
+
+- we can hide and unhide field 
+- we can rename column name 
+- create a gropu by folder then create a folder by column - easy for navigation parts 
+
+--------------------------
+6)calculated field
+-------------------
+7)data blending - by add connection - join types
+------------------------------------------
+8) filters
+
+- put column in colur
+- put column in filter shelf  
+- using wildcard
+- using conditions 
+- using top 
+- date filters
+- show filters and then we change filter types 
+- put measure name and values in filter by range
+- data souce filters - edit data source filters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+1)Highlights - all options - navigation
+2)Actions 
+
+- Action Filters - Trigger a Action by souce and destination with hover , menu , etc
+
+- Create a Action for highlights - we can create for sheets and dashboards also it will be usefull
+
+- Create a action with url with paramaters
+-----------------------------------------------------
+
+Dashboards
+- insert web page , we can use url also 
+- we can change tittle also 
+----------------------------------------
+
+story point - for sequences
+
+-----------------
+device designer
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+rank 
+
+1) calculated field - rank (sum(sales))
+2) drop rank of sales in table
+3) rank dense - format we can change
+4)rank modified 
+5)rank unique
+---------------
+sub category in row , sales in column - marks waterfall - sales size - sort 
+
+

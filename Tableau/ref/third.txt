@@ -1,0 +1,75 @@
+calculations 
+
+1) Analysis - grand total 
+2) mark - sales - quick table calculations - create a percentage of total 
+
+3) order date in column , sales in row ( marks - bar chart ) and second sales as quick tabel calculation - percentage of total 
+
+- Table related calculations - triangle 
+- normal is data base related calculation 
+
+4) we can duplicate sheet as crosstab we can create table with percentage 
+- create grand total by analysis - column grand total 
+
+- we can create a subtotal also by analysis 
+
+5) running total 
+
+- order date column sales in sales made as month wise 
+
+- sales in row change into discrete 
+
+- row sales - quick table calculations                                          
+- date in column and two sales in rows select - second sales - running total 
+
+
+Compute 
+
+1) category , sub category in row , two sales in column change one as percentage of total 
+
+- analysis - sub total and grand total 
+
+- compute using - subcategory - we get how much the sub category is contributing , we can calcualte using catgeory also 
+
+- then create as cross tab for table we can clearly see detailed info 
+
+- order date - row  , category in column , sales in text - change as percentage of total , analysis - show column grand total  , show row grand total 
+
+- year wise sales we can see , but i want category wise  - sales - compute using - table down /table 
+
+
+conditional formatting 
+
+1) sub catgeory in row , sales in text and sort 
+
+2) calculated field  - index ()
+
+3) change index into decrete and then put in table
+
+4) calculated field - top n  
+
+index < = 10
+
+5) put top n in colour - we can exclude and filter 
+
+6) we can create a bottom 
+
+- last () - calculated field - change into discrete 
+- create a calculated field - bottom N 
+- last < = 5
+- put bottom in colour 
+
+7) we can create a top 5 or bottom 5
+- index < = 5 or last < = 5
+
+
+
+
+
+
+
+
+
+
+
+
